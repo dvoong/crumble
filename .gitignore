@@ -1,0 +1,6 @@
+# python compile files
+*.pyc
+
+# emacs autosave and backup files
+*~
+*#
