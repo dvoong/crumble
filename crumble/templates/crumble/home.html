@@ -3,4 +3,47 @@
 {% block title %}Home Page{% endblock %}
 
 {% block content %}
+    {% load staticfiles %}
+
+    <div class="container">
+      <div class="jumbotron">
+	<h1>Warm apple crumble</h1>
+	<p style="height: 20px"></p>
+	<p><a class="btn btn-primary btn-lg" href="#" role="button">I am a company</a>  <a class="btn btn-primary btn-lg" href="#" role="button">I am a student</a></p>
+      </div>
+
+      <div class="container" id="main-container">
+	<div class="container" id="what-we-do-container">
+	  <h2>Connecting Students and Industry</h2>
+	  <p>Bacon ipsum dolor amet bacon ball tip chuck chicken sausage prosciutto, andouille bresaola capicola tail rump hamburger brisket cow beef. Bacon flank pork loin, tail fatback brisket beef ribs alcatra capicola drumstick ball tip meatloaf boudin. T-bone ribeye ground round, flank filet mignon corned beef short loin leberkas swine jerky. Strip steak picanha rump, beef porchetta pork belly chuck.</p>
+	  <p>Sausage short loin meatball, picanha filet mignon sirloin tongue rump fatback capicola beef porchetta alcatra strip steak shankle. Shoulder pork loin short loin venison. Ham hock frankfurter shoulder pork loin, pastrami tenderloin brisket. Turkey cow strip steak andouille. Beef capicola kevin, boudin ham jowl picanha cow meatball tongue turkey strip steak turducken pig. Short loin ham pastrami, drumstick chuck ball tip spare ribs filet mignon salami rump brisket. Salami shankle chicken tail short ribs pork belly ball tip rump andouille bacon bresaola kevin sausage cupim.</p>
+	</div>
+	<div class="container" id="the-team-container">
+	  <h2>The Team</h2>
+	  <div class="row">
+	    <div class="col-md-3">
+	      <h4>David</h4>
+	      <img src="{% static 'crumble/images/david.jpg' %}" alt="" class="profile-pic">
+	      <p>Pork chop filet mignon beef jerky, beef ribs pancetta porchetta strip steak kevin. Meatloaf drumstick salami boudin. Bacon jowl pork t-bone jerky kielbasa. Frankfurter chicken alcatra salami tenderloin. Jerky boudin sausage meatloaf rump.</p>
+	    </div>
+	    <div class="col-md-3">
+	      <h4>Zung</h4>
+	      <img src="{% static 'crumble/images/zung.jpeg' %}" alt="" class="profile-pic">
+	      <p>Bresaola ham corned beef shankle brisket, turducken drumstick tri-tip jerky. Rump leberkas ham, t-bone pork belly bacon chuck picanha turkey beef flank. Hamburger pig strip steak pancetta drumstick. Jerky ground round doner turkey t-bone porchetta prosciutto ham hock shank pig bresaola shoulder filet mignon. Doner kielbasa tenderloin biltong short loin turducken beef ribs bacon andouille pork shank alcatra brisket drumstick. Rump pancetta short loin pig brisket doner, sausage kevin venison.</p>
+	    </div>
+	    <div class="col-md-3">
+	      <h4>Vlad</h4>
+	      <img src="{% static 'crumble/images/vlad.png' %}" alt="" class="profile-pic">
+	      <p>Ham corned beef pork porchetta brisket landjaeger rump turducken swine beef. Leberkas landjaeger flank strip steak short loin, spare ribs corned beef shoulder turkey tenderloin kielbasa. Salami meatball alcatra spare ribs, jowl beef venison shoulder cow kevin bresaola leberkas short loin fatback. Turkey capicola shoulder biltong meatloaf beef ribs ribeye salami strip steak ground round cupim.</p>
+	    </div>
+	    <div class="col-md-3">
+	      <h4>Wayz</h4>
+	      <img src="{% static 'crumble/images/ways.jpeg' %}" alt="" class="profile-pic">
+	      <p>Fatback pork belly beef ribs tri-tip salami, tongue capicola meatball. Brisket bacon sirloin picanha, prosciutto sausage meatloaf shank fatback short ribs beef ribs alcatra shoulder ball tip jowl. Rump landjaeger pork loin pastrami bacon spare ribs cupim turducken leberkas jerky. Tri-tip short loin tenderloin short ribs pig salami prosciutto, andouille spare ribs.</p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+
 {% endblock %}

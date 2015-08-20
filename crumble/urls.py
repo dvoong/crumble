@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'crumble.views.home', name='home'),
+    url(r'^registration$', 'crumble.views.registration', name='registration'),
 ]
