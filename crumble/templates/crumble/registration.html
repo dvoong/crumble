@@ -3,4 +3,12 @@
 {% block title %}Registration{% endblock %}
 
 {% block content %}
+
+<form action="" method="post" id="registration-form"> {% csrf_token %}
+  <table>
+    {{ registration_form }}
+    <tr><td></td><td><input type="submit" value="Submit"></td></tr>
+  </table>
+</form>
+
 {% endblock %}
